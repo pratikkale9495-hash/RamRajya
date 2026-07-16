@@ -1,0 +1,1316 @@
+/* =====================================
+   RAMRAJYA WEBSITE
+   STYLE.CSS (PART 2A)
+===================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffdf8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Colors */
+
+:root{
+
+    --saffron:#ff9933;
+    --gold:#d4af37;
+    --maroon:#7b1113;
+    --white:#ffffff;
+    --cream:#fff8f0;
+    --dark:#1d1d1d;
+    --gray:#666;
+    --shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Images */
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* Section */
+
+.section{
+
+    padding:80px 10%;
+
+}
+
+.bg{
+
+    background:var(--cream);
+
+}
+
+.title{
+
+    font-size:38px;
+    text-align:center;
+    color:var(--maroon);
+    margin-bottom:20px;
+    font-weight:700;
+
+}
+
+.section p{
+
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    color:#555;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 10%;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo i{
+
+    color:var(--saffron);
+    font-size:32px;
+
+}
+
+.logo h2{
+
+    color:var(--maroon);
+
+}
+
+/* Navigation */
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+nav ul li a{
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--saffron);
+
+}
+
+/* ==========================
+ HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:url("https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    color:white;
+
+    text-align:center;
+
+    max-width:850px;
+
+    z-index:5;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    color:#f3f3f3;
+
+    margin-bottom:35px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:var(--saffron);
+
+    color:white;
+
+    border-radius:40px;
+
+    margin:10px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:var(--maroon);
+
+    transform:translateY(-4px);
+
+}
+
+.btn2{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    border:2px solid white;
+
+    color:white;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    margin:10px;
+
+}
+
+.btn2:hover{
+
+    background:white;
+
+    color:var(--maroon);
+
+}
+
+/* ==========================
+   CARD GRID
+========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:var(--saffron);
+
+    margin-bottom:15px;
+
+}
+
+.card h3{
+
+    color:var(--maroon);
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+/* ===========================================
+   STYLE.CSS (PART 2B)
+   About • Culture • Festivals • Temples
+   Organizations • Volunteer • Donate
+===========================================*/
+
+/* ---------- About Section ---------- */
+
+#about{
+    background:#ffffff;
+}
+
+#about p{
+    font-size:18px;
+    margin-top:20px;
+    line-height:1.9;
+    max-width:900px;
+}
+
+/* ---------- Culture ---------- */
+
+#culture{
+    background:#fff8f0;
+}
+
+#culture .card{
+    border-top:5px solid var(--saffron);
+}
+
+#culture .card:hover{
+    background:linear-gradient(135deg,#fff5e8,#ffffff);
+}
+
+/* ---------- Festivals ---------- */
+
+#festival{
+    background:#fff;
+}
+
+#festival .card{
+    border-bottom:5px solid var(--gold);
+}
+
+#festival .card h3{
+    color:var(--maroon);
+    font-size:24px;
+}
+
+#festival .card:hover{
+    transform:translateY(-12px) scale(1.03);
+}
+
+/* ---------- Temples ---------- */
+
+#temples{
+    background:#fff8f0;
+}
+
+#temples .card{
+    overflow:hidden;
+    transition:.4s;
+}
+
+#temples .card:hover{
+    background:linear-gradient(135deg,#fff8e8,#ffffff);
+}
+
+/* ---------- Organizations ---------- */
+
+#org{
+    background:#ffffff;
+}
+
+#org .card{
+    border-left:6px solid var(--saffron);
+}
+
+#org .card:hover{
+    border-left:6px solid var(--maroon);
+}
+
+/* ---------- Volunteer ---------- */
+
+#volunteer{
+    background:linear-gradient(
+        rgba(255,255,255,.95),
+        rgba(255,255,255,.95)
+    );
+    text-align:center;
+}
+
+#volunteer h2{
+    margin-bottom:20px;
+}
+
+#volunteer p{
+    max-width:850px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+/* ---------- Donate ---------- */
+
+.donate{
+
+    background:linear-gradient(
+        135deg,
+        #7b1113,
+        #a32020
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.donate h2{
+
+    color:var(--gold);
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.donate p{
+
+    color:white;
+
+    max-width:850px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+}
+
+/* ---------- Events ---------- */
+
+.events{
+    background:#fff8f0;
+}
+
+.events .card{
+    border-top:5px solid var(--gold);
+}
+
+/* ---------- Blog ---------- */
+
+#blog{
+    background:#ffffff;
+}
+
+#blog .card:hover{
+    background:#fff7ef;
+}
+
+/* ---------- Contact ---------- */
+
+#contact{
+    background:#fff8f0;
+}
+
+form{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+}
+
+form input,
+form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    font-size:16px;
+
+}
+
+form textarea{
+
+    resize:none;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer h2{
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+    color:#ddd;
+
+}
+
+.social{
+
+    margin:25px 0;
+
+}
+
+.social i{
+
+    width:45px;
+
+    height:45px;
+
+    line-height:45px;
+
+    border-radius:50%;
+
+    background:#333;
+
+    margin:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:20px;
+
+}
+
+.social i:hover{
+
+    background:var(--saffron);
+
+    transform:translateY(-5px);
+
+}
+
+/* ---------- Hover Effect ---------- */
+
+.card:hover{
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/* ---------- Decorative Line ---------- */
+
+.title::after{
+
+    content:"";
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--saffron);
+
+    display:block;
+
+    margin:15px auto;
+
+    border-radius:20px;
+
+}
+/* ==========================================
+   RAMRAJYA WEBSITE
+   STYLE.CSS (PART 2C)
+   Responsive Design
+==========================================*/
+
+/* Tablet */
+
+@media(max-width:992px){
+
+header{
+
+padding:15px 5%;
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.section{
+
+padding:70px 6%;
+
+}
+
+.title{
+
+font-size:34px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+
+position:relative;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:12px;
+
+padding-top:15px;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:120px 20px 80px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn,
+.btn2{
+
+display:block;
+
+width:220px;
+
+margin:15px auto;
+
+text-align:center;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.section{
+
+padding:60px 20px;
+
+}
+
+.title{
+
+font-size:30px;
+
+}
+
+form{
+
+width:100%;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.title{
+
+font-size:26px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.btn,
+.btn2{
+
+width:100%;
+
+}
+
+footer{
+
+padding:40px 15px;
+
+}
+
+}
+
+/* ==========================================
+   Animations
+==========================================*/
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero-content{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.card{
+
+animation:fadeUp .8s ease;
+
+}
+
+/* Button Hover */
+
+.btn:hover{
+
+box-shadow:0 12px 25px rgba(255,153,51,.4);
+
+}
+
+.btn2:hover{
+
+box-shadow:0 12px 25px rgba(255,255,255,.3);
+
+}
+
+/* Smooth Card Animation */
+
+.card{
+
+transition:all .4s ease;
+
+}
+
+/* Shadow */
+
+.card:hover{
+
+box-shadow:0 25px 45px rgba(0,0,0,.15);
+
+}
+
+/* Input Focus */
+
+input:focus,
+textarea:focus{
+
+border:2px solid #ff9933;
+
+}
+
+/* Selection */
+
+::selection{
+
+background:#ff9933;
+
+color:white;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f3f3f3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff9933;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#7b1113;
+
+}
+/* ===================================
+   Mobile Menu
+===================================*/
+
+.menu-btn{
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+color:var(--maroon);
+
+}
+
+/* Theme */
+
+.theme-toggle{
+
+font-size:24px;
+
+cursor:pointer;
+
+margin-left:20px;
+
+color:var(--maroon);
+
+}
+
+/* Scroll Top */
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff9933;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#topBtn:hover{
+
+background:#7b1113;
+
+}
+
+/* Dark Mode */
+
+.dark{
+
+background:#121212;
+
+color:white;
+
+}
+
+.dark header{
+
+background:#1c1c1c;
+
+}
+
+.dark .card{
+
+background:#232323;
+
+color:white;
+
+}
+
+.dark footer{
+
+background:#000;
+
+}
+
+.dark input,
+.dark textarea{
+
+background:#2c2c2c;
+
+color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+nav{
+
+display:none;
+
+width:100%;
+
+}
+
+nav.active{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.theme-toggle{
+
+margin-top:10px;
+
+}
+
+}
+/* =====================================
+   PREMIUM SECTIONS
+===================================== */
+
+
+/* Stats */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+padding:70px 10%;
+
+background:
+
+linear-gradient(
+135deg,
+#7b1113,
+#ff9933
+);
+
+color:white;
+
+}
+
+
+.stat-box{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(10px);
+
+padding:35px;
+
+text-align:center;
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+
+background:rgba(255,255,255,.25);
+
+}
+
+
+.stat-box i{
+
+font-size:45px;
+
+color:#ffd700;
+
+margin-bottom:15px;
+
+}
+
+
+.stat-box h2{
+
+font-size:45px;
+
+}
+
+
+/* Countdown */
+
+.countdown{
+
+text-align:center;
+
+padding:80px 20px;
+
+background:#fff8f0;
+
+}
+
+
+.countdown h2{
+
+color:#7b1113;
+
+font-size:36px;
+
+}
+
+
+.countdown h3{
+
+margin:20px;
+
+font-size:28px;
+
+color:#ff9933;
+
+}
+
+
+
+#timer{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+
+#timer span{
+
+background:#7b1113;
+
+color:white;
+
+padding:20px;
+
+border-radius:15px;
+
+min-width:100px;
+
+font-size:18px;
+
+}
+
+
+#timer span span{
+
+display:block;
+
+font-size:35px;
+
+color:#ffd700;
+
+font-weight:bold;
+
+}
+
+
+/* Glass Effect */
+
+.glass{
+
+background:rgba(255,255,255,.25);
+
+backdrop-filter:blur(15px);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.3);
+
+}
+
+
+/* Floating Animation */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+.floating{
+
+animation:floating 4s infinite;
+
+}
